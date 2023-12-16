@@ -1,0 +1,36 @@
+var isPowerOfThree = function(n) {
+    if(n<1)
+    return false;
+    for (let i = 0; i<=n;i++){
+        let num= Math.pow(3,i);
+        if (num===n)
+        return true;
+        if (num>n) 
+        return false;
+    }
+};
+// Question
+//Given an integer n, return true if it is a power of three. Otherwise, return false.
+
+//An integer n is a power of three, if there exists an integer x such that n == 3x.
+(* Example 1:
+
+Input: n = 27
+Output: true
+Explanation: 27 = 33
+Example 2:
+
+Input: n = 0
+Output: false
+Explanation: There is no x where 3x = 0.
+Example 3:
+
+Input: n = -1
+Output: false
+Explanation: There is no x where 3x = (-1). *)
+// Approach
+// check if the number is number is 1 return false
+//loop through the list of number
+// check if there is a power of 3 we use built in function called math.pow takes two arument the base and the exponent
+// we check the "num" is equal to the n
+// if it is return true, if its not return false
